@@ -14,7 +14,6 @@ while (i <= 20) {
   } else {
     sum += i;
     i ++;
-    console.log(i);
   }
 }
 
