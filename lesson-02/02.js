@@ -9,10 +9,10 @@
 
 let dice1 = Math.floor(Math.random() * 6) + 1;// your code
 let dice2 = Math.floor(Math.random() * 6) + 1;// your code
-let isWinningDouble = dice1 === dice2 ? true : false;// your code
+let isWinningDouble = dice1 === dice2 && dice1 > 3 ? true : false;// your code
 
-/* 
-console.log('Первый бросок: ' + dice1)
+
+/* console.log('Первый бросок: ' + dice1)
 console.log('Второй бросок: ' + dice2)
 if (isWinningDouble) {
   console.log('Выигрышный дубль!')
