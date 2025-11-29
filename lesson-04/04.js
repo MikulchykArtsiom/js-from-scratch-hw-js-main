@@ -17,9 +17,8 @@ function doubleEachCharacter(str) {
     for (let i = 0; i < str.length; i++) {
         arr.push(str[i],str[i])   
     }
-    return arr
+    return arr.join("")
 }
 
 
-let a = doubleEachCharacter('hello');
-console.log(a);
+
