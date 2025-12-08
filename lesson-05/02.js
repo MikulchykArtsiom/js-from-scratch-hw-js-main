@@ -35,4 +35,12 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(objGallery,name,meaning) {
+  for (const key in objGallery) {
+    if(key === name){
+      return objGallery[name] = meaning;
+    }else {
+      return objGallery[name] = meaning;
+    }
+  }
+}
