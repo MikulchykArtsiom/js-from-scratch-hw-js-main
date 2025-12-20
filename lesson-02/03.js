@@ -22,5 +22,4 @@ if (0 < score && score < 50) {
     console.log("ERROR");
 }
 
-console.log("Оценка: ", grade, score);
 

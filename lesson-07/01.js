@@ -17,3 +17,36 @@ const WEB_TECH_IMAGES = [
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/c8a1f4a6-1337-4899-bdfd-a8c9c7bb806a_css-magic-logo.jpg',
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/784380b9-6937-42a6-bdfe-869835820234_html-magic-logo.jpg',
 ]
+
+const btnPrev = window.document.getElementById('prev-button');
+const btnNext = window.document.getElementById('next-button');
+const logo = window.document.getElementById('web-tech-image');
+
+btnPrev.addEventListener('click', function () {
+  for (let i = 0; i < WEB_TECH_IMAGES.length; i++) {
+    const img = WEB_TECH_IMAGES[i];
+    if (img === logo.getAttribute('src')) {
+      if (i === 0) {
+        logo.setAttribute('src', WEB_TECH_IMAGES[2]);
+        break;
+      } else if (i === 1) {
+        logo.setAttribute('src', WEB_TECH_IMAGES[0]);
+        break;
+      } else if (i === 2) {
+        logo.setAttribute('src', WEB_TECH_IMAGES[1]);
+        break;
+      }
+    }
+  }
+})
+
+btnNext.addEventListener('click', function () {
+  for (let i = 0; i < WEB_TECH_IMAGES.length; i++) {
+    const img = WEB_TECH_IMAGES[i];
+    if (img === logo.getAttribute('src')) {
+      const a = i++ < 2 ? i++ : 0
+      logo.setAttribute('src', WEB_TECH_IMAGES[a]);
+      break;
+    }
+  }
+})
