@@ -46,7 +46,6 @@ btnNext.addEventListener('click', function () {
     if (img === logo.getAttribute('src')) {
       const a = i++ < 2 ? i++ : 0
       logo.setAttribute('src', WEB_TECH_IMAGES[a]);
-      break;
     }
   }
 })

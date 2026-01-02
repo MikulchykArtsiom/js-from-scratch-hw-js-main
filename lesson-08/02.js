@@ -7,8 +7,8 @@ function isNumeric(str) {
   return !(Number.isNaN(+str) || +str === 0)
 }
 
-console.log(isNumeric("123")) // Ожидаемый результат: true
-console.log(isNumeric("12.3")) // Ожидаемый результат: true
-console.log(isNumeric("123abc")) // Ожидаемый результат: false
-console.log(isNumeric("abc")) // Ожидаемый результат: false
-console.log(isNumeric(" ")) // Ожидаемый результат: false
+// console.log(isNumeric("123")) // Ожидаемый результат: true
+// console.log(isNumeric("12.3")) // Ожидаемый результат: true
+// console.log(isNumeric("123abc")) // Ожидаемый результат: false
+// console.log(isNumeric("abc")) // Ожидаемый результат: false
+// console.log(isNumeric(" ")) // Ожидаемый результат: false
